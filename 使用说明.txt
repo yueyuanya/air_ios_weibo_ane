@@ -1,0 +1,67 @@
+version:1.0
+author: yueyuanya
+
+微博ios版ane使用说明：
+
+1.将weibo_ios.swc添加到air工程库路径
+   将weibo_ios.ane添加到air本机扩展路径
+   在iOS打包设置－本机扩展选中weibo_ios.ane
+
+2.as代码调用接口
+
+ var weibo:WeiboAPI=new WeiboAPI();
+  
+  //注册app key
+  weibo.registKey(appkey);
+ 
+  //授权
+  weib.auth();
+
+  //分享
+  weibo.share(content:String,bitmapData:BitmapData);
+
+ //动态call  直接调用libWeiboAPI.a中定义好的code
+ weibo.call(code:String,data:*);
+ 
+
+3.as监听微博响应
+    weibo.addEnevtListener(WeiboAPIEvent.RESPONSE,onResp);
+    通过weibo.code weibo.level取到响应数据
+    
+   //授权成功响应
+   weibo.code="respTokenSuccess";
+   weibo.level=token;//token值
+
+  //授权失败
+  weibo.code="respTokenFail;
+   weibo.level= statusCode;//见weibosdk WeiboSDKResponseStatusCode定义
+   
+   //发布响应
+  weibo.code="respShare";
+   weibo.level=statusCode;//见weibosdk WeiboSDKResponseStatusCode定义
+
+  //用于调试的公共响应
+  //只要收到微博响应就会触发WeiboAPIEvent.RESPONSE
+  //一次响应会先后触发respStart respEnd
+ weibo.code="respStart";
+ weibo.code="respEnd";
+   
+
+4.as监听openurl
+ 需要通过invoke方式监听app的openURL，交给weibosdk处理
+NativeApplication.nativeApplication.addEventListener(InvokeEvent.INVOKE,onInvoke);
+private function onInvoke(e:InvokeEvent):void{
+			trace("invoke");
+			if (Capabilities.manufacturer.indexOf("iOS") != -1)//只在ios下采用这种方式
+			{
+				if (e.arguments != null && e.arguments.length > 0)
+				{
+					var url:String = e.arguments[0] as String;
+					if ( url != null)
+					{
+						weibo.call("openURL", url);
+					}
+				}
+			}
+		}
+
