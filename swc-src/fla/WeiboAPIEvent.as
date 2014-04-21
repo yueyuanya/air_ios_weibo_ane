@@ -1,0 +1,1 @@
+﻿package  {		public class WeiboAPIEvent {		public function WeiboAPIEvent() {			// constructor code		}				public static const RESPONSE:String="weibo_response";	}	}

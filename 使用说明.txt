@@ -1,4 +1,4 @@
-version:1.0
+version:1.1
 author: yueyuanya
 
 微博ios版ane使用说明：
@@ -12,12 +12,12 @@ author: yueyuanya
  var weibo:WeiboAPI=new WeiboAPI();
   
   //注册app key
-  weibo.registKey(appkey);
+  weibo.registerKey(appkey);
  
   //授权
   weib.auth();
 
-  //分享
+  //发布（分享）
   weibo.share(content:String,bitmapData:BitmapData);
 
  //动态call  直接调用libWeiboAPI.a中定义好的code
@@ -33,7 +33,7 @@ author: yueyuanya
    weibo.level=token;//token值
 
   //授权失败
-  weibo.code="respTokenFail;
+  weibo.code="respTokenFail";
    weibo.level= statusCode;//见weibosdk WeiboSDKResponseStatusCode定义
    
    //发布响应
@@ -64,4 +64,24 @@ private function onInvoke(e:InvokeEvent):void{
 				}
 			}
 		}
+5.app-xml添加配置
+ 在<iPhone> <InfoAdditions>后添加以下配置
 
+<key>MinimumOSVersion</key>
+        <string>6.1</string>
+			<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.weibo</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>wb1112872085</string>
+			</array>
+		</dict>
+	</array>
+
+wb1112872085改为自己的appkey
+由于libWeiboAPI.a编译版本为ios6.1以上，所以MinimumOSVersion为6.1

@@ -1,0 +1,12 @@
+//
+// Prefix header for all source files of the 'WeiboAPI' target in the 'WeiboAPI' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#import "WeiboSDK.h"
+
+//com.sina.weibo.SNWeiboSDKDemo
+#define kAppKey         @"2015177591"
+#define kRedirectURI    @"http://www.sina.com"
+#endif

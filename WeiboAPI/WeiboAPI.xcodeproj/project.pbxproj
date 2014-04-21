@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4428EFE21905030D00A8BA4E /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4428EFDF1905030D00A8BA4E /* libWeiboSDK.a */; };
+		4428EFE31905030D00A8BA4E /* WeiboSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 4428EFE11905030D00A8BA4E /* WeiboSDK.h */; };
+		443FFB8718F818B500F2FE25 /* ManagerHead.h in Headers */ = {isa = PBXBuildFile; fileRef = 443FFB8518F818B500F2FE25 /* ManagerHead.h */; };
+		443FFB8818F818B500F2FE25 /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 443FFB8618F818B500F2FE25 /* Manager.m */; };
+		4460F99218F5918A0000DC43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4460F99118F5918A0000DC43 /* Foundation.framework */; };
+		4460F99418F5918A0000DC43 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4460F99318F5918A0000DC43 /* CoreFoundation.framework */; };
+		4460F99618F5918A0000DC43 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4460F99518F5918A0000DC43 /* UIKit.framework */; };
+		4460F99818F5918A0000DC43 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4460F99718F5918A0000DC43 /* MobileCoreServices.framework */; };
+		4460F99A18F5918A0000DC43 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4460F99918F5918A0000DC43 /* CoreGraphics.framework */; };
+		4460F99C18F5918A0000DC43 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4460F99B18F5918A0000DC43 /* SystemConfiguration.framework */; };
+		4460F99E18F5918A0000DC43 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4460F99D18F5918A0000DC43 /* AudioToolbox.framework */; };
+		4460F9A018F5918A0000DC43 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4460F99F18F5918A0000DC43 /* CFNetwork.framework */; };
+		4460F9A218F5918A0000DC43 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4460F9A118F5918A0000DC43 /* QuartzCore.framework */; };
+		4460F9A418F5918A0000DC43 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4460F9A318F5918A0000DC43 /* OpenGLES.framework */; };
+		4460F9A618F5918A0000DC43 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4460F9A518F5918A0000DC43 /* CoreLocation.framework */; };
+		4460F9A818F5918A0000DC43 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4460F9A718F5918A0000DC43 /* CoreMedia.framework */; };
+		4460F9AA18F5918A0000DC43 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4460F9A918F5918A0000DC43 /* CoreVideo.framework */; };
+		4460F9AC18F5918A0000DC43 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4460F9AB18F5918A0000DC43 /* AVFoundation.framework */; };
+		4460F9AE18F5918A0000DC43 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4460F9AD18F5918A0000DC43 /* Security.framework */; };
+		4460F9BE18F5918A0000DC43 /* WeiboAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4460F9BD18F5918A0000DC43 /* WeiboAPI.m */; };
+		4460F9CF18F599800000DC43 /* FlashRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4460F9CE18F599800000DC43 /* FlashRuntimeExtensions.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4460F9B518F5918A0000DC43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4460F98618F5918A0000DC43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4460F98D18F5918A0000DC43;
+			remoteInfo = WeiboAPI;
+		};
+		4460F9B718F5918A0000DC43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4460F98618F5918A0000DC43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4460F9B018F5918A0000DC43;
+			remoteInfo = WeiboAPI.ane;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4428EFDF1905030D00A8BA4E /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
+		4428EFE01905030D00A8BA4E /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
+		4428EFE11905030D00A8BA4E /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
+		443FFB8518F818B500F2FE25 /* ManagerHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerHead.h; sourceTree = "<group>"; };
+		443FFB8618F818B500F2FE25 /* Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Manager.m; sourceTree = "<group>"; };
+		4460F98E18F5918A0000DC43 /* libWeiboAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWeiboAPI.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4460F99118F5918A0000DC43 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4460F99318F5918A0000DC43 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		4460F99518F5918A0000DC43 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4460F99718F5918A0000DC43 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		4460F99918F5918A0000DC43 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4460F99B18F5918A0000DC43 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4460F99D18F5918A0000DC43 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4460F99F18F5918A0000DC43 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4460F9A118F5918A0000DC43 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4460F9A318F5918A0000DC43 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		4460F9A518F5918A0000DC43 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4460F9A718F5918A0000DC43 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		4460F9A918F5918A0000DC43 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		4460F9AB18F5918A0000DC43 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4460F9AD18F5918A0000DC43 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4460F9B118F5918A0000DC43 /* WeiboAPI.ane */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = WeiboAPI.ane; sourceTree = BUILT_PRODUCTS_DIR; };
+		4460F9B418F5918A0000DC43 /* DebugWeiboAPIAIRApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DebugWeiboAPIAIRApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4460F9BB18F5918A0000DC43 /* WeiboAPI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeiboAPI-Prefix.pch"; sourceTree = "<group>"; };
+		4460F9BC18F5918A0000DC43 /* WeiboAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeiboAPI.h; sourceTree = "<group>"; };
+		4460F9BD18F5918A0000DC43 /* WeiboAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiboAPI.m; sourceTree = "<group>"; };
+		4460F9BF18F5918A0000DC43 /* extension.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = extension.xml; sourceTree = "<group>"; };
+		4460F9C018F5918A0000DC43 /* platformoptions.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = platformoptions.xml; sourceTree = "<group>"; };
+		4460F9C118F5918A0000DC43 /* generateANE.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generateANE.sh; sourceTree = "<group>"; };
+		4460F9C218F5918A0000DC43 /* debugIPA.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = debugIPA.sh; sourceTree = "<group>"; };
+		4460F9CE18F599800000DC43 /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlashRuntimeExtensions.h; path = WeiboAPI/FlashRuntimeExtensions.h; sourceTree = "<group>"; };
+		44BE52D318F6F11D00360FEF /* image_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_1.jpg; sourceTree = "<group>"; };
+		44BE52D418F6F11D00360FEF /* image_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_2.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4460F98B18F5918A0000DC43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4460F99218F5918A0000DC43 /* Foundation.framework in Frameworks */,
+				4460F99418F5918A0000DC43 /* CoreFoundation.framework in Frameworks */,
+				4460F99618F5918A0000DC43 /* UIKit.framework in Frameworks */,
+				4460F99818F5918A0000DC43 /* MobileCoreServices.framework in Frameworks */,
+				4460F99A18F5918A0000DC43 /* CoreGraphics.framework in Frameworks */,
+				4460F99C18F5918A0000DC43 /* SystemConfiguration.framework in Frameworks */,
+				4460F99E18F5918A0000DC43 /* AudioToolbox.framework in Frameworks */,
+				4460F9A018F5918A0000DC43 /* CFNetwork.framework in Frameworks */,
+				4460F9A218F5918A0000DC43 /* QuartzCore.framework in Frameworks */,
+				4460F9A418F5918A0000DC43 /* OpenGLES.framework in Frameworks */,
+				4460F9A618F5918A0000DC43 /* CoreLocation.framework in Frameworks */,
+				4428EFE21905030D00A8BA4E /* libWeiboSDK.a in Frameworks */,
+				4460F9A818F5918A0000DC43 /* CoreMedia.framework in Frameworks */,
+				4460F9AA18F5918A0000DC43 /* CoreVideo.framework in Frameworks */,
+				4460F9AC18F5918A0000DC43 /* AVFoundation.framework in Frameworks */,
+				4460F9AE18F5918A0000DC43 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4428EFDE1905030D00A8BA4E /* libWeiboSDK */ = {
+			isa = PBXGroup;
+			children = (
+				4428EFDF1905030D00A8BA4E /* libWeiboSDK.a */,
+				4428EFE01905030D00A8BA4E /* WeiboSDK.bundle */,
+				4428EFE11905030D00A8BA4E /* WeiboSDK.h */,
+			);
+			name = libWeiboSDK;
+			path = "../../../xcode/weibo_ios_sdk-master/libWeiboSDK";
+			sourceTree = "<group>";
+		};
+		4460F98518F5918A0000DC43 = {
+			isa = PBXGroup;
+			children = (
+				4428EFDE1905030D00A8BA4E /* libWeiboSDK */,
+				4460F9CE18F599800000DC43 /* FlashRuntimeExtensions.h */,
+				4460F9B918F5918A0000DC43 /* WeiboAPI */,
+				4460F99018F5918A0000DC43 /* Frameworks */,
+				4460F98F18F5918A0000DC43 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4460F98F18F5918A0000DC43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4460F98E18F5918A0000DC43 /* libWeiboAPI.a */,
+				4460F9B118F5918A0000DC43 /* WeiboAPI.ane */,
+				4460F9B418F5918A0000DC43 /* DebugWeiboAPIAIRApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4460F99018F5918A0000DC43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4460F99118F5918A0000DC43 /* Foundation.framework */,
+				4460F99318F5918A0000DC43 /* CoreFoundation.framework */,
+				4460F99518F5918A0000DC43 /* UIKit.framework */,
+				4460F99718F5918A0000DC43 /* MobileCoreServices.framework */,
+				4460F99918F5918A0000DC43 /* CoreGraphics.framework */,
+				4460F99B18F5918A0000DC43 /* SystemConfiguration.framework */,
+				4460F99D18F5918A0000DC43 /* AudioToolbox.framework */,
+				4460F99F18F5918A0000DC43 /* CFNetwork.framework */,
+				4460F9A118F5918A0000DC43 /* QuartzCore.framework */,
+				4460F9A318F5918A0000DC43 /* OpenGLES.framework */,
+				4460F9A518F5918A0000DC43 /* CoreLocation.framework */,
+				4460F9A718F5918A0000DC43 /* CoreMedia.framework */,
+				4460F9A918F5918A0000DC43 /* CoreVideo.framework */,
+				4460F9AB18F5918A0000DC43 /* AVFoundation.framework */,
+				4460F9AD18F5918A0000DC43 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4460F9B918F5918A0000DC43 /* WeiboAPI */ = {
+			isa = PBXGroup;
+			children = (
+				4460F9BC18F5918A0000DC43 /* WeiboAPI.h */,
+				4460F9BD18F5918A0000DC43 /* WeiboAPI.m */,
+				4460F9BA18F5918A0000DC43 /* Supporting Files */,
+				443FFB8518F818B500F2FE25 /* ManagerHead.h */,
+				443FFB8618F818B500F2FE25 /* Manager.m */,
+			);
+			path = WeiboAPI;
+			sourceTree = "<group>";
+		};
+		4460F9BA18F5918A0000DC43 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44BE52D418F6F11D00360FEF /* image_2.jpg */,
+				44BE52D318F6F11D00360FEF /* image_1.jpg */,
+				4460F9BB18F5918A0000DC43 /* WeiboAPI-Prefix.pch */,
+				4460F9BF18F5918A0000DC43 /* extension.xml */,
+				4460F9C018F5918A0000DC43 /* platformoptions.xml */,
+				4460F9C118F5918A0000DC43 /* generateANE.sh */,
+				4460F9C218F5918A0000DC43 /* debugIPA.sh */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4460F98C18F5918A0000DC43 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				443FFB8718F818B500F2FE25 /* ManagerHead.h in Headers */,
+				4428EFE31905030D00A8BA4E /* WeiboSDK.h in Headers */,
+				4460F9CF18F599800000DC43 /* FlashRuntimeExtensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4460F98D18F5918A0000DC43 /* WeiboAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4460F9C518F5918A0000DC43 /* Build configuration list for PBXNativeTarget "WeiboAPI" */;
+			buildPhases = (
+				4460F98A18F5918A0000DC43 /* Sources */,
+				4460F98B18F5918A0000DC43 /* Frameworks */,
+				4460F98C18F5918A0000DC43 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeiboAPI;
+			productName = WeiboAPI;
+			productReference = 4460F98E18F5918A0000DC43 /* libWeiboAPI.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4460F9B018F5918A0000DC43 /* WeiboAPI.ane */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4460F9C818F5918A0000DC43 /* Build configuration list for PBXNativeTarget "WeiboAPI.ane" */;
+			buildPhases = (
+				4460F9AF18F5918A0000DC43 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4460F9B618F5918A0000DC43 /* PBXTargetDependency */,
+			);
+			name = WeiboAPI.ane;
+			productName = WeiboAPI.ane;
+			productReference = 4460F9B118F5918A0000DC43 /* WeiboAPI.ane */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4460F9B318F5918A0000DC43 /* DebugWeiboAPIAIRApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4460F9CB18F5918A0000DC43 /* Build configuration list for PBXNativeTarget "DebugWeiboAPIAIRApp" */;
+			buildPhases = (
+				4460F9B218F5918A0000DC43 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4460F9B818F5918A0000DC43 /* PBXTargetDependency */,
+			);
+			name = DebugWeiboAPIAIRApp;
+			productName = DebugWeiboAPIAIRApp;
+			productReference = 4460F9B418F5918A0000DC43 /* DebugWeiboAPIAIRApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4460F98618F5918A0000DC43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = 4460F98918F5918A0000DC43 /* Build configuration list for PBXProject "WeiboAPI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4460F98518F5918A0000DC43;
+			productRefGroup = 4460F98F18F5918A0000DC43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4460F98D18F5918A0000DC43 /* WeiboAPI */,
+				4460F9B018F5918A0000DC43 /* WeiboAPI.ane */,
+				4460F9B318F5918A0000DC43 /* DebugWeiboAPIAIRApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4460F9AF18F5918A0000DC43 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "\n\t\t\t\t\t\t\t\tchmod 755 \"$PROJECT_DIR/$PROJECT_NAME/generateANE.sh\"\n\t\t\t\t\t\t\t\t\"$PROJECT_DIR/$PROJECT_NAME/generateANE.sh\"\n\t\t\t\t\t";
+		};
+		4460F9B218F5918A0000DC43 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "\n\t\t\t\t\t\t\t\tchmod 755 \"$PROJECT_DIR/$PROJECT_NAME/debugIPA.sh\"\n\t\t\t\t\t\t\t\t\"$PROJECT_DIR/$PROJECT_NAME/debugIPA.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4460F98A18F5918A0000DC43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4460F9BE18F5918A0000DC43 /* WeiboAPI.m in Sources */,
+				443FFB8818F818B500F2FE25 /* Manager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4460F9B618F5918A0000DC43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4460F98D18F5918A0000DC43 /* WeiboAPI */;
+			targetProxy = 4460F9B518F5918A0000DC43 /* PBXContainerItemProxy */;
+		};
+		4460F9B818F5918A0000DC43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4460F9B018F5918A0000DC43 /* WeiboAPI.ane */;
+			targetProxy = 4460F9B718F5918A0000DC43 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4460F9C318F5918A0000DC43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				New_Setting = "";
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "/Applications/Adobe Flash Builder 4.7/eclipse/plugins/com.adobe.flash.compiler_4.7.0.349722/AIRSDK/include/";
+			};
+			name = Debug;
+		};
+		4460F9C418F5918A0000DC43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				New_Setting = "";
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "/Applications/Adobe Flash Builder 4.7/eclipse/plugins/com.adobe.flash.compiler_4.7.0.349722/AIRSDK/include/";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4460F9C618F5918A0000DC43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/WeiboAPI.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeiboAPI/WeiboAPI-Prefix.pch";
+				GCC_VERSION = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"\\\"$(SRCROOT)/libWeiboSDK\\\"",
+					"/Volumes/work/xcode/weibo_ios_sdk-master/libWeiboSDK",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "/Applications/Adobe Flash Builder 4.7/eclipse/plugins/com.adobe.flash.compiler_4.7.0.349722/AIRSDK/include/ ../WeiboSDKSrc/WeiboSDK";
+			};
+			name = Debug;
+		};
+		4460F9C718F5918A0000DC43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/WeiboAPI.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeiboAPI/WeiboAPI-Prefix.pch";
+				GCC_VERSION = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"\\\"$(SRCROOT)/libWeiboSDK\\\"",
+					"/Volumes/work/xcode/weibo_ios_sdk-master/libWeiboSDK",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "/Applications/Adobe Flash Builder 4.7/eclipse/plugins/com.adobe.flash.compiler_4.7.0.349722/AIRSDK/include/ ../WeiboSDKSrc/WeiboSDK";
+			};
+			name = Release;
+		};
+		4460F9C918F5918A0000DC43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AIR_SDK_PATH = "/Applications/Adobe Flash Builder 4.7/eclipse/plugins/com.adobe.flash.compiler_4.7.0.349722/AIRSDK";
+				EXECUTABLE_EXTENSION = ane;
+				EXECUTABLE_PREFIX = "";
+				NATIVEEXTENSION_SWC = /Volumes/work/workspace/WeiboAPI/bin/WeiboAPI.swc;
+				PRODUCT_NAME = WeiboAPI;
+			};
+			name = Debug;
+		};
+		4460F9CA18F5918A0000DC43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AIR_SDK_PATH = "/Applications/Adobe Flash Builder 4.7/eclipse/plugins/com.adobe.flash.compiler_4.7.0.349722/AIRSDK";
+				EXECUTABLE_EXTENSION = ane;
+				EXECUTABLE_PREFIX = "";
+				NATIVEEXTENSION_SWC = /Volumes/work/workspace/WeiboAPI/bin/WeiboAPI.swc;
+				PRODUCT_NAME = WeiboAPI;
+			};
+			name = Release;
+		};
+		4460F9CC18F5918A0000DC43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AIR_SDK_PATH = "/Applications/Adobe Flash Builder 4.7/eclipse/plugins/com.adobe.flash.compiler_4.7.0.349722/AIRSDK";
+				NATIVEEXTENSION_SWC = /;
+				PRODUCT_NAME = DebugWeiboAPIAIRApp;
+			};
+			name = Debug;
+		};
+		4460F9CD18F5918A0000DC43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AIR_SDK_PATH = "/Applications/Adobe Flash Builder 4.7/eclipse/plugins/com.adobe.flash.compiler_4.7.0.349722/AIRSDK";
+				NATIVEEXTENSION_SWC = /;
+				PRODUCT_NAME = DebugWeiboAPIAIRApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4460F98918F5918A0000DC43 /* Build configuration list for PBXProject "WeiboAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4460F9C318F5918A0000DC43 /* Debug */,
+				4460F9C418F5918A0000DC43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4460F9C518F5918A0000DC43 /* Build configuration list for PBXNativeTarget "WeiboAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4460F9C618F5918A0000DC43 /* Debug */,
+				4460F9C718F5918A0000DC43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4460F9C818F5918A0000DC43 /* Build configuration list for PBXNativeTarget "WeiboAPI.ane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4460F9C918F5918A0000DC43 /* Debug */,
+				4460F9CA18F5918A0000DC43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4460F9CB18F5918A0000DC43 /* Build configuration list for PBXNativeTarget "DebugWeiboAPIAIRApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4460F9CC18F5918A0000DC43 /* Debug */,
+				4460F9CD18F5918A0000DC43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4460F98618F5918A0000DC43 /* Project object */;
+}
