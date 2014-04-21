@@ -1,0 +1,88 @@
+{\rtf1\ansi\ansicpg936\cocoartf1187\cocoasubrtf390
+{\fonttbl\f0\fnil\fcharset134 STHeitiSC-Light;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 Monaco;
+}
+{\colortbl;\red255\green255\blue255;\red51\green153\blue102;\red0\green51\blue255;\red153\green0\blue0;
+\red0\green153\blue0;\red102\green153\blue204;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 version:1.0\
+author: yueyuanya\
+\
+\'ce\'a2\'b2\'a9ios\'b0\'e6ane\'ca\'b9\'d3\'c3\'cb\'b5\'c3\'f7\'a3\'ba\
+\
+1.\'bd\'abweibo_ios.swc\'cc\'ed\'bc\'d3\'b5\'bdair\'b9\'a4\'b3\'cc\'bf\'e2\'c2\'b7\'be\'b6\
+   \'bd\'abweibo_ios.ane\'cc\'ed\'bc\'d3\'b5\'bdair\'b1\'be\'bb\'fa\'c0\'a9\'d5\'b9\'c2\'b7\'be\'b6\
+   \'d4\'daiOS\'b4\'f2\'b0\'fc\'c9\'e8\'d6\'c3\'a3\'ad\'b1\'be\'bb\'fa\'c0\'a9\'d5\'b9\'d1\'a1\'d6\'d0weibo_ios.ane\
+\
+2.as\'b4\'fa\'c2\'eb\'b5\'f7\'d3\'c3\'bd\'d3\'bf\'da\
+\
+ var weibo:WeiboAPI=new WeiboAPI();\
+  \
+  //\'d7\'a2\'b2\'e1app key\
+  weibo.registKey(appkey);\
+ \
+  //\'ca\'da\'c8\'a8\
+  weib.auth();\
+\
+  //\'b7\'d6\'cf\'ed\
+  weibo.share(content:String,bitmapData:BitmapData);\
+\
+ //\'b6\'af\'cc\'accall  \'d6\'b1\'bd\'d3\'b5\'f7\'d3\'c3libWeiboAPI.a\'d6\'d0\'b6\'a8\'d2\'e5\'ba\'c3\'b5\'c4code\
+ weibo.call(code:String,data:*);\
+ \
+\
+3.as\'bc\'e0\'cc\'fd\'ce\'a2\'b2\'a9\'cf\'ec\'d3\'a6\
+    weibo.addEnevtListener(WeiboAPIEvent.RESPONSE,onResp);\
+    \'cd\'a8\'b9\'fdweibo.code weibo.level\'c8\'a1\'b5\'bd\'cf\'ec\'d3\'a6\'ca\'fd\'be\'dd\
+    \
+   //\'ca\'da\'c8\'a8\'b3\'c9\'b9\'a6\'cf\'ec\'d3\'a6\
+   weibo.code="respTokenSuccess";\
+   weibo.level=token;//token\'d6\'b5\
+\
+  //\'ca\'da\'c8\'a8\'ca\'a7\'b0\'dc\
+  weibo.code="respTokenFail;\
+   weibo.level= statusCode;//\'bc\'fbweibosdk 
+\f1\fs22 \CocoaLigature0 WeiboSDKResponseStatusCode
+\f0\fs24 \CocoaLigature1 \'b6\'a8\'d2\'e5\
+   \
+   //\'b7\'a2\'b2\'bc\'cf\'ec\'d3\'a6\
+  weibo.code="respShare";\
+   weibo.level=statusCode;//\'bc\'fbweibosdk 
+\f1\fs22 \CocoaLigature0 WeiboSDKResponseStatusCode
+\f0\fs24 \CocoaLigature1 \'b6\'a8\'d2\'e5\
+\
+  //\'d3\'c3\'d3\'da\'b5\'f7\'ca\'d4\'b5\'c4\'b9\'ab\'b9\'b2\'cf\'ec\'d3\'a6\
+  //\'d6\'bb\'d2\'aa\'ca\'d5\'b5\'bd\'ce\'a2\'b2\'a9\'cf\'ec\'d3\'a6\'be\'cd\'bb\'e1\'b4\'a5\'b7\'a2WeiboAPIEvent.RESPONSE\
+  //\'d2\'bb\'b4\'ce\'cf\'ec\'d3\'a6\'bb\'e1\'cf\'c8\'ba\'f3\'b4\'a5\'b7\'a2respStart respEnd\
+ weibo.code="respStart";\
+ weibo.code="respEnd";\
+   \
+\
+4.as\'bc\'e0\'cc\'fdopenurl\
+ \'d0\'e8\'d2\'aa\'cd\'a8\'b9\'fdinvoke\'b7\'bd\'ca\'bd\'bc\'e0\'cc\'fdapp\'b5\'c4openURL\'a3\'ac\'bd\'bb\'b8\'f8weibosdk\'b4\'a6\'c0\'ed\
+\pard\pardeftab720
+
+\f2\fs22 \cf0 NativeApplication.nativeApplication.addEventListener(InvokeEvent.INVOKE,onInvoke);\
+private \cf2 function\cf0  onInvoke(e:InvokeEvent):\cf3 void\cf0 \{\
+			trace(\cf4 "invoke"\cf0 );\
+			\cf3 if\cf0  (Capabilities.manufacturer.indexOf(\cf4 "iOS"\cf0 ) != -1)\cf5 //
+\f0 \'d6\'bb\'d4\'da
+\f2 ios
+\f0 \'cf\'c2\'b2\'c9\'d3\'c3\'d5\'e2\'d6\'d6\'b7\'bd\'ca\'bd
+\f2 \cf0 \
+			\{\
+				\cf3 if\cf0  (e.arguments != \cf3 null\cf0  && e.arguments.length > 0)\
+				\{\
+					\cf6 var\cf0  url:String = e.arguments[0] \cf3 as\cf0  String;\
+					\cf3 if\cf0  ( url != \cf3 null\cf0 )\
+					\{\
+						weibo.call(\cf4 "openURL"\cf0 , url);\
+					\}\
+				\}\
+			\}\
+		\}
+\f0\fs24 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+}
