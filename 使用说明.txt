@@ -1,4 +1,4 @@
-version:1.1
+version:1.1.1
 author: yueyuanya
 
 微博ios版ane使用说明：
@@ -12,10 +12,10 @@ author: yueyuanya
  var weibo:WeiboAPI=new WeiboAPI();
   
   //注册app key
-  weibo.registerKey(appkey);
+  weibo.registerKey(appkey,redirecturl);
  
   //授权
-  weib.auth();
+  weib.auth(scope);
 
   //发布（分享）
   weibo.share(content:String,bitmapData:BitmapData);
