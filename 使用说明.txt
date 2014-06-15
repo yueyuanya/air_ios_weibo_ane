@@ -24,7 +24,7 @@ author: yueyuanya
  weibo.call(code:String,data:*);
  
 
-3.as监听微博响应
+3.as监听微博响应状态
     weibo.addEnevtListener(WeiboAPIEvent.RESPONSE,onResp);
     通过weibo.code weibo.level取到响应数据
     
@@ -36,9 +36,9 @@ author: yueyuanya
   weibo.code="respTokenFail";
    weibo.level= statusCode;//见weibosdk WeiboSDKResponseStatusCode定义
    
-   //发布响应
+   //分享成功 （只有分享成功才会监听到，失败或取消时未处理，可自行修改Manager.m-didReceiveWeiboResponse）
   weibo.code="respShare";
-   weibo.level=statusCode;//见weibosdk WeiboSDKResponseStatusCode定义
+   weibo.level=statusCode;//实际为0 见weibosdk WeiboSDKResponseStatusCode定义
 
   //用于调试的公共响应
   //只要收到微博响应就会触发WeiboAPIEvent.RESPONSE
