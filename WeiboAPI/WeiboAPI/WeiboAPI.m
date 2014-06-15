@@ -132,7 +132,7 @@ ANE_FUNCTION(openURL)
     //
     NSString *str = [[NSString alloc] initWithString:[NSString stringWithUTF8String:(const char*)url]];
     NSURL *nurl=[NSURL URLWithString:str];
-    [WeiboSDK handleOpenURL:nurl delegate:manager];
+    [WeiboSDK handleOpenURL:nurl delegate:manager]; 
     
 }
 

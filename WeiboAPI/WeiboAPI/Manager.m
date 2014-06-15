@@ -38,10 +38,12 @@
                                                        delegate:nil
                                               cancelButtonTitle:@"确定"
                                               otherButtonTitles:nil];
+        NSString *status=[NSString stringWithFormat:@"%d",(int)response.statusCode];
         if((int)response.statusCode==WeiboSDKResponseStatusCodeSuccess){
+            FREDispatchStatusEventAsync(self.g_ctx, (const uint8_t*)"respShare", (const uint8_t*)[status UTF8String]);
+            
         [alert show];
         }
-        FREDispatchStatusEventAsync(self.g_ctx, (const uint8_t*)"respShare", (const uint8_t*)response.statusCode);
         
         
         [alert release];
@@ -57,12 +59,14 @@
                                               otherButtonTitles:nil];
         
         NSString *token=[(WBAuthorizeResponse *)response accessToken];
+        NSString *status=[NSString stringWithFormat:@"%d",(int)response.statusCode];
          if((int)response.statusCode!=0){
-             FREDispatchStatusEventAsync(self.g_ctx, (const uint8_t*)"respTokenFail", (const uint8_t*)[token UTF8String]);
+             
+             FREDispatchStatusEventAsync(self.g_ctx, (const uint8_t*)"respTokenFail", (const uint8_t*)[status UTF8String]);
              
         [alert show];
         }else{
-            FREDispatchStatusEventAsync(self.g_ctx, (const uint8_t*)"respTokenSuccess", (const uint8_t*)response.statusCode);
+            FREDispatchStatusEventAsync(self.g_ctx, (const uint8_t*)"respTokenSuccess", (const uint8_t*)[token UTF8String]);
             
         }
         [alert release];

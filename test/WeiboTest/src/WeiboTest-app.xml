@@ -291,6 +291,7 @@
 			<array>
 				
 				<string>1</string>
+				<string>2</string>
 			</array>
 			<key>MinimumOSVersion</key>
         <string>6.1</string>
